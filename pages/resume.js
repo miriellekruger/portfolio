@@ -3,30 +3,32 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
-import { getPostData_resume } from '../lib/resume'
+import { getPostData } from '../lib/posts'
 
-export default function Resume({ resumeData }) {
+export default function Resume({ postData }) {
     return (
     <Layout>
         <Head>
-        <title>{resumeData.title}</title>
+        <title>{postData.title}</title>
         </Head>
         <article>
-        <h1 className={utilStyles.headingXl}>{resumeData.title}</h1>
+        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
-            <Date dateString={resumeData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: resumeData.contentHtml }} />
+            <Date dateString={postData.date} />
+        </div> 
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </article>
     </Layout>
     )
 }
 
-export async function getStaticProps() {
-  const resumeData = await getPostData_resume()
+export async function getStaticProps({ params }) {
+  const folder = `resume`
+  const id = 'resume'
+  const postData = await getPostData({id, folder})
   return {
     props: {
-      resumeData
+      postData
     }
   }
 }

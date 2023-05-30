@@ -1,3 +1,13 @@
+:root {
+  --bg:  #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms; 
+}
+
 html,
 body {
   padding: 0;
@@ -7,6 +17,7 @@ body {
   line-height: 1.6;
   font-size: 18px;
 }
+
 
 * {
   box-sizing: border-box;

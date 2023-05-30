@@ -30,14 +30,14 @@ Highest Honors, Provost Scholar, Honors Program
 Python, Solidworks, MATLAB, Microsoft Suite
 
 ## WORK EXPERIENCE
-### [FIG. 1 Patents](/posts/patents)
+### [FIG. 1 Patents](/posts/experiences/patents)
 Spokane, Washington\
 Patent Agent	\
 June 2021 – May 2022
 - Authored, filed, and prosecuted multiple patent applications concurrently, primarily in the software and machine learning field.
 - Created compelling visual representations to illustrate complex inventions of patent applications. 
 - Advocated for patent application allowance by planning and conducting interviews with patent examiners. 
-### [National Aeronautics and Space Administration (NASA)](/posts/NASA)
+### [National Aeronautics and Space Administration (NASA)](/posts/experiences/NASA)
 Kennedy Space Center, Florida\
 Research Engineering Intern	\
 Jan. 2020 – Aug. 2020
@@ -46,12 +46,12 @@ Jan. 2020 – Aug. 2020
 - Performed chemical analysis of reaction products using infrared spectroscopy (FTIR), gas chromatography (GC), and scanning electron microscopy (SEM). 
 - Generated custom automatic data analysis and visualization tools with Python to process raw data and analyze trends and key performance products to increase analysis efficiency 100-fold. 
 ## PROJECTS
-### [Extreme Precipitation Data Analysis Project](/posts/dva)		
+### [Extreme Precipitation Data Analysis Project](/posts/experiences/dva)		
 Georgia Tech\
 Team Member	\
 Jan. 2023 – Present
 - Developing a map-style interface based on time-series data models identifying environmental factors that influence extreme precipitation​ sensitivity across the U.S. with plotly in Python using GIS data.
-### [Full-Stack Database Project](/posts/databases)	
+### [Full-Stack Database Project](/posts/experiences/databases)	
 Georgia Tech\
 Team Member\
 Jan. 2023 – Present

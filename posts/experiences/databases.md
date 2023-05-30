@@ -6,8 +6,6 @@ tag: 'databases, API, Docker, HTML, CSS, JavaScript'
 author: 'Mirielle Kruger'
 ---
 
-# Full-Stack Database Website
-
 #### Summary
 
 Our team developed a full-stack website for a non-profit organization to collect and summarize household energy inputs and outputs. The website's core functionalities include a household input form to add to the database, with appliances and power generation for the household included, and several reports from the database with complex queries and unique front-end requirements.

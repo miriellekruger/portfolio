@@ -50,6 +50,7 @@ const Navbar = ({name}) => {
           <ul className={`${styles['nav-links']} ${isOpen ? styles.open : ''}`}>
           <li><a href="/">Home</a></li>
           <li><a href="/resume">Resume</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
     </nav>

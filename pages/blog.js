@@ -6,50 +6,19 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
 
-export default function Home({ allBlogData,allExpData }) {
+export default function Blog({ allBlogData }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>It's me. Hi. I'm Mirielle Kruger.  It's me! </p>
-        <p>
-          <Image
-            priority
-            src="/images/aqua-2-flowers.jpeg"
-            height={500}
-            width={500}
-            alt="plant"
-          />
-        </p>
-
-      </section>
-      <section>
-
-
-      </section>
-
+      
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allBlogData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/blog/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Experiences</h2>
-        <ul className={utilStyles.list}>
-          {allExpData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/experiences/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
@@ -65,12 +34,10 @@ export default function Home({ allBlogData,allExpData }) {
 export async function getStaticProps() {
   var folder = "blog"
   const allBlogData = getSortedPostsData({folder})
-  folder = "experiences"
-  const allExpData = getSortedPostsData({folder})
+
   return {
     props: {
-      allBlogData,
-      allExpData
+      allBlogData
     }
   }
 }
