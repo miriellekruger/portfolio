@@ -46,7 +46,7 @@ Jan. 2020 – Aug. 2020
 - Performed chemical analysis of reaction products using infrared spectroscopy (FTIR), gas chromatography (GC), and scanning electron microscopy (SEM). 
 - Generated custom automatic data analysis and visualization tools with Python to process raw data and analyze trends and key performance products to increase analysis efficiency 100-fold. 
 ## PROJECTS
-### Extreme Precipitation Data Analysis Project		
+### [Extreme Precipitation Data Analysis Project](/posts/dva)		
 Georgia Tech\
 Team Member	\
 Jan. 2023 – Present
