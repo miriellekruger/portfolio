@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
+import Section from "../components/section"
 
 import Date from '../components/date'
 import Link from 'next/link'
@@ -12,7 +13,7 @@ const Contact = () => {
       <Head>
       <title>Contact Me</title>
       </Head>
-      <article>
+      <Section>
       <h1 className={utilStyles.headingXl}>Contact Me</h1>
       <div className={utilStyles.lightText}>
         <Link href="mailto:miriellekruger13@gmail.com">
@@ -20,7 +21,7 @@ const Contact = () => {
         </Link>  
       </div>
       
-      </article>
+      </Section>
   </Layout>
   )
 }

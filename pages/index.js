@@ -5,6 +5,9 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
+import { FaMusic } from 'react-icons/fa';
+import Emoji from "../components/emoji"
+import Section from '../components/section'
 
 export default function Home({ allBlogData,allExpData }) {
   return (
@@ -12,8 +15,34 @@ export default function Home({ allBlogData,allExpData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>It's me. Hi. I'm Mirielle Kruger.  It's me! </p>
+      <Section className={utilStyles.headingMd}>
+        
+        <h3>It's me. Hi. I'm Mirielle Kruger.  It's me! </h3>
+        <p>
+          <Emoji symbol="🚀" label="rocket-ship" />
+          <Link href="/posts/blog/journey">
+            {allBlogData.filter(({id})=> id=='journey')[0].title}
+          </Link>
+          </p>
+
+        <h3>Current Interests</h3>
+        <p>
+          <Emoji symbol="🚃" label="music-notes" />
+          <Link href="https://www.youtube.com/watch?v=y_SXXTBypIg&list=PLJp5q-R0lZ0_FCUbeVWK6OGLN69ehUTVa">
+            Car-Free and Carefree
+          </Link>
+          </p>
+        <p>
+          <Emoji symbol="🎶" label="music-notes" />
+          <Link href="https://open.spotify.com/playlist/2icttH00ddVX5THrCuAoL5?si=25110c8282a54ad2">
+            Playlist
+          </Link></p>
+        <p>
+          <Emoji symbol="📚" label="books" />
+          <Link href='/posts/blog/reading'>
+            Reading List
+          </Link>
+        </p>
         <p>
           <Image
             priority
@@ -24,13 +53,13 @@ export default function Home({ allBlogData,allExpData }) {
           />
         </p>
 
-      </section>
+      </Section>
       <section>
 
 
       </section>
-
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+{/* 
+      <Section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allBlogData.map(({ id, date, title }) => (
@@ -43,8 +72,8 @@ export default function Home({ allBlogData,allExpData }) {
             </li>
           ))}
         </ul>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      </Section> */}
+      <Section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Experiences</h2>
         <ul className={utilStyles.list}>
           {allExpData.map(({ id, date, title }) => (
@@ -57,7 +86,7 @@ export default function Home({ allBlogData,allExpData }) {
             </li>
           ))}
         </ul>
-      </section>
+      </Section>
     </Layout>
   )
 }
@@ -67,10 +96,13 @@ export async function getStaticProps() {
   const allBlogData = getSortedPostsData({folder})
   folder = "experiences"
   const allExpData = getSortedPostsData({folder})
+  // folder = "interests"
+  // const allIntData = getSortedPostsData({folder})
   return {
     props: {
       allBlogData,
-      allExpData
+      allExpData, 
+      // allIntData
     }
   }
 }

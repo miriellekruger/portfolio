@@ -1,11 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --bg:  #242526;
   --bg-accent: #484a4d;
   --text-color: #dadce1;
   --nav-size: 60px;
   --border: 1px solid #474a4d;
-  --border-radius: 8px;
+  --border-radius: 10px;
   --speed: 500ms; 
+  --page-width: 80rem;
 }
 
 html,
@@ -35,4 +40,5 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+  border-radius: var(--border-radius);
 }
