@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import Section from '../components/section'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 import { getPostData } from '../lib/posts'
@@ -13,11 +12,11 @@ export default function Resume({ postData }) {
         <title>{postData.title}</title>
         </Head>
         <Section>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-            <Date dateString={postData.date} />
+        <h1 className="flex text-3xl font-bold justify-center pb-3 text-dark1">RESUME</h1>
+        <div className="text-dark1">
+            {/* <Date dateString={postData.date} /> */}
         </div> 
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className='text-dark1_lighter' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         {/* {console.log(postData.contentHtml)} */}
         </Section>
     </Layout>

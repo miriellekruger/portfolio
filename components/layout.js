@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import NavBar from './NavBar'
 
@@ -10,9 +8,11 @@ export const siteTitle = 'Mirielle Kruger Portfolio'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    
+    <div className="flex">
       <Head>
         <link rel="icon" href="/favicon.ico" />
+  
         <meta
           name="description"
           content="Learn more about Mirielle Kruger!"
@@ -23,18 +23,18 @@ export default function Layout({ children, home }) {
             siteTitle
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         /> */}
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="og:title" content={siteTitle} />
+        <meta name="twitter:card" content="summary_large_image" /> */}
       </Head>
-      <header className={styles.header}>
+      <header className="">
         <NavBar name={name} />
       </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
+      <main className='pt-20 mx-auto'>{children}</main>
+      {/* {!home && (
+        <div className='pt-20'>
           <Link href="/">← Back to home</Link>
         </div>
-      )}
+      )} */}
     </div>
   )
 }

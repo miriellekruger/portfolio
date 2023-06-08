@@ -1,32 +1,33 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
+import Section from "../components/section"
+
 
 export default function Blog({ allBlogData }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Blog</title>
       </Head>
       
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+      <Section className="">
+        <h2 className="flex text-3xl font-bold justify-center pb-3 text-dark1 ">BLOG</h2>
+        <ul className="list-none">
           {allBlogData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/blog/${id}`}>{title}</Link>
+            <li  key={id}>
+              <Link className="" href={`/posts/blog/${id}`}>{title}</Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <small className="">
                 <Date dateString={date} />
               </small>
             </li>
           ))}
         </ul>
-      </section>
+      </Section>
     </Layout>
   )
 }
