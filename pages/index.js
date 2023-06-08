@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
@@ -15,7 +14,7 @@ export default function Home({ allBlogData,allExpData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Section className={utilStyles.headingMd}>
+      <Section className="text-md">
         
         <h3>It's me. Hi. I'm Mirielle Kruger.  It's me! </h3>
         <p>
@@ -44,6 +43,12 @@ export default function Home({ allBlogData,allExpData }) {
           </Link>
         </p>
         <p>
+          <Emoji symbol="🪴" label="plant in pot" />
+          <Link href='/posts/blog/plants'>
+            Fan Page for My Plants
+          </Link>
+        </p>
+        <p>
           <Image
             priority
             src="/images/aqua-2-flowers.jpeg"
@@ -54,10 +59,7 @@ export default function Home({ allBlogData,allExpData }) {
         </p>
 
       </Section>
-      <section>
 
-
-      </section>
 {/* 
       <Section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
@@ -73,19 +75,19 @@ export default function Home({ allBlogData,allExpData }) {
           ))}
         </ul>
       </Section> */}
-      <Section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Experiences</h2>
-        <ul className={utilStyles.list}>
+      <Section className="text-md p-1">
+        <h2 className='text-lg'>Experiences</h2>
+        <div>
           {allExpData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <p key={id}>
               <Link href={`/posts/experiences/${id}`}>{title}</Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <small className="text-dark1">
                 <Date dateString={date} />
               </small>
-            </li>
+            </p>
           ))}
-        </ul>
+        </div>
       </Section>
     </Layout>
   )
