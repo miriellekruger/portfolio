@@ -15,19 +15,21 @@ export default function Blog({ allBlogData }) {
       </Head>
       
       <Section>
+        <div className='px-4'>
         <h2 className="flex text-3xl font-bold justify-center pb-3 text-dark1 ">BLOG</h2>
-        <ul className="list-none">
+        <div className="">
           {allBlogData.map(({ id, date, title, description }) => (
-            <li className='my-5' key={id}>
+            <div className='my-5' key={id}>
               <Link className="text-xl" href={`/posts/blog/${id}`}>{title}</Link>
               <br />
               <small className="text-dark1">
                 <Date dateString={date} />
               </small> 
               <span className='text-s ml-3 text-dark1'>{description}</span>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
+        </div>
       </Section>
     </Layout>
   )

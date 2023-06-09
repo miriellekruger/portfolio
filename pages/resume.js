@@ -12,12 +12,14 @@ export default function Resume({ postData }) {
         <title>{postData.title}</title>
         </Head>
         <Section>
-        <h1 className="flex text-3xl font-bold justify-center pb-3 text-dark1">RESUME</h1>
-        <div className="text-dark1">
-            {/* <Date dateString={postData.date} /> */}
-        </div> 
-        <div className='text-dark1_lighter' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        {/* {console.log(postData.contentHtml)} */}
+          <div className='px-4'>
+            <h1 className="flex text-3xl font-bold justify-center pb-3 text-dark1">RESUME</h1>
+            <div className="text-dark1">
+                {/* <Date dateString={postData.date} /> */}
+            </div> 
+            <div className='text-dark1_lighter' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            {/* {console.log(postData.contentHtml)} */}
+          </div>
         </Section>
     </Layout>
     )

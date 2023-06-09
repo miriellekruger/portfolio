@@ -64,7 +64,7 @@ export default () => {
     <div className='lg:py-4 px-4 mx-auto max-w-screen-md'>
       <form className='space-y-8' onSubmit={handleOnSubmit}>
         <div>
-          <label className='block mb-2 text-md font-medium text-dark1_lighter ' htmlFor="email">Your Email</label>
+          <label className='block mb-2 text-base font-medium text-dark1_lighter ' htmlFor="email">Your Email</label>
           <input className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light' 
             id="email"
             type="email"
@@ -76,7 +76,7 @@ export default () => {
           />
         </div>
         <div>
-          <label className='block mb-2 text-md font-medium text-dark1_lighter ' htmlFor="subject">Subject</label>
+          <label className='block mb-2 text-base font-medium text-dark1_lighter ' htmlFor="subject">Subject</label>
           <input className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light' 
             id="subject"
             type="text"
@@ -88,7 +88,7 @@ export default () => {
           />
         </div>
         <div>
-          <label className='block mb-2 text-md font-medium dark:text-gray-300 text-dark1_lighter' htmlFor="message">Message</label>
+          <label className='block mb-2 text-base font-medium dark:text-gray-300 text-dark1_lighter' htmlFor="message">Message</label>
           <textarea className='block p-3 w-full text-sm bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light ' 
             id="message"
             name="message"
@@ -99,7 +99,7 @@ export default () => {
           />
         </div>
         <div className=''>
-          <button className='py-3 px-5 text-md font-medium text-center text-white rounded-lg bg-dark1 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800' type="submit" disabled={status.submitting}>
+          <button className='py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-dark1 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800' type="submit" disabled={status.submitting}>
             {!status.submitting
               ? !status.submitted
                 ? 'Submit'

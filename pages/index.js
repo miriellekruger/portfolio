@@ -14,12 +14,12 @@ export default function Home({ allBlogData,allExpData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Section className="text-md mx-auto">
-        
-        <h3 className='flex text-3xl pt-5 font-bold justify-center text-dark1 '>it's me.  hi.  i'm mirielle kruger.   it's me! </h3>
-        <h3 className='flex text-xl justify-center pb-3 text-dark1_lighter align-middle'> 
-          mere(<Emoji className="text-2xl -m-0.5" symbol="🪞" label="mirror"/>)-E-L crew(<Emoji className="text-2xl" symbol="🚣🏻‍♀️🚣🏻‍♀️" label="rowing crew"/>)-grr(<Emoji className="text-2xl" symbol="🐯" label="tiger grr"/>)
-        </h3>
+      <Section>
+        <div className="mx-auto max-w-screen-md px-4">
+        <h3 className='flex text-3xl font-bold justify-center text-center text-dark1 '>it's me.  hi.  i'm mirielle kruger.   it's me! </h3>
+        <p className='flex text-xs sm:text-base md:text-xl justify-center pb-3 text-dark1_lighter break-all'> 
+          mere(<Emoji className="text-base sm:text-lg md:text-2xl -m-0.5" symbol="🪞" label="mirror"/>)-E-L crew(<Emoji className="text-base sm:text-lg md:text-2xl" symbol="🚣🏻‍♀️" label="rowing crew"/>)-grr(<Emoji className="text-base sm:text-lg md:text-2xl" symbol="🐯" label="tiger grr"/>)
+        </p>
         <p>
           <Emoji className="mr-2" symbol="🚀" label="rocket-ship" />
           <Link href="/posts/blog/journey">
@@ -59,11 +59,14 @@ export default function Home({ allBlogData,allExpData }) {
             width={500}
             alt="plant"
           />
+          
         </p> */}
+        </div>
 
       </Section>
       
-      <Section className="text-md p-1 m-2">
+      <Section >
+        <div className="text-base p-1 mx-2">
         <h2 className='text-2xl my-3 flex justify-center'>Experiences</h2>
         <div className='md:flex gap-10 overflow-auto bg-background2  rounded-xl shadow-lg md:scroll-p-5 md:snap-x md:snap-mandatory p-6'>
           {allExpData.map(({ id, date, title, img }) => (
@@ -89,6 +92,7 @@ export default function Home({ allBlogData,allExpData }) {
               </small>
             </div>
           ))}
+        </div>
         </div>
       </Section>
     </Layout>
