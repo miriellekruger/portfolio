@@ -3,7 +3,7 @@ import { getAllPostIds, getPostData } from '../../../lib/posts'
 import Head from 'next/head'
 import Date from '../../../components/date'
 // import IntroGrid from '../../../components/intro-grid'
-import Section from "../../../components/Section"
+import Section from "../../../components/section"
 
 export default function Post({ postData }) {
   return (

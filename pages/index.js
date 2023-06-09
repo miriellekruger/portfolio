@@ -6,7 +6,7 @@ import Date from '../components/date'
 import Image from 'next/image'
 import { FaMusic } from 'react-icons/fa';
 import Emoji from "../components/emoji"
-import Section from '../components/Section'
+import Section from '../components/section'
 
 export default function Home({ allBlogData,allExpData }) {
   return (

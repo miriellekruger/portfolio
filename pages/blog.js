@@ -4,7 +4,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
-import Section from "../components/Section"
+import Section from "../components/section"
 
 
 export default function Blog({ allBlogData }) {

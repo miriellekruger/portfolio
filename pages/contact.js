@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import ContactForm from '../components/ContactForm'
-import Section from '../components/Section'
+import Section from '../components/section'
 
 import Date from '../components/date'
 import Link from 'next/link'

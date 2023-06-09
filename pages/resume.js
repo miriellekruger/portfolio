@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import Section from '../components/Section'
+import Section from '../components/section'
 import Link from 'next/link'
 import Date from '../components/date'
 import { getPostData } from '../lib/posts'
