@@ -9,15 +9,15 @@ import Section from "../components/section"
 
 export default function Blog({ allBlogData }) {
   return (
-    <Layout home>
+    <Layout >
       <Head>
         <title>Blog</title>
       </Head>
       
       <Section>
         <div className='px-4'>
-        <h2 className="flex text-3xl font-bold justify-center pb-3 text-dark1 ">BLOG</h2>
-        <div className="">
+        <h1 className="flex text-3xl font-bold justify-center pb-3 text-dark1">BLOG</h1>
+        <div>
           {allBlogData.map(({ id, date, title, description }) => (
             <div className='my-5' key={id}>
               <Link className="text-xl" href={`/posts/blog/${id}`}>{title}</Link>

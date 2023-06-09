@@ -10,13 +10,13 @@ import Section from '../components/section'
 
 export default function Home({ allBlogData,allExpData }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <Section>
         <div className="mx-auto max-w-screen-md px-4">
-        <h3 className='flex text-3xl font-bold justify-center text-center text-dark1 '>it's me.  hi.  i'm mirielle kruger.   it's me! </h3>
+        <h1 className='flex text-3xl font-bold justify-center text-center text-dark1 '>it's me.  hi.  i'm mirielle kruger.   it's me! </h1>
         <p className='flex text-xs sm:text-base md:text-xl justify-center pb-3 text-dark1_lighter break-all'> 
           mere(<Emoji className="text-base sm:text-lg md:text-2xl -m-0.5" symbol="🪞" label="mirror"/>)-E-L crew(<Emoji className="text-base sm:text-lg md:text-2xl" symbol="🚣🏻‍♀️" label="rowing crew"/>)-grr(<Emoji className="text-base sm:text-lg md:text-2xl" symbol="🐯" label="tiger grr"/>)
         </p>

@@ -8,7 +8,6 @@ export const siteTitle = 'Mirielle Kruger Portfolio'
 
 export default function Layout({ children, home }) {
   return (
-    
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -29,7 +28,7 @@ export default function Layout({ children, home }) {
       <header className="">
         <NavBar name={name} />
       </header>
-      <main className='pt-20'>{children}</main>
+      <main className=' pt-20'>{children}</main>
       {/* {!home && (
         <div className='pt-20'>
           <Link href="/">← Back to home</Link>
