@@ -3,7 +3,7 @@ import { getAllPostIds, getPostData } from '../../../lib/posts'
 import Head from 'next/head'
 import Date from '../../../components/date'
 // import IntroGrid from '../../../components/intro-grid'
-import Section from "../../../components/section"
+import Section from "../../../components/Section"
 
 export default function Post({ postData }) {
   return (
@@ -12,7 +12,7 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <Section>
-        <h1 className="text-xl">{postData.title}</h1>
+        <h1 className="text-xl text-center">{postData.title}</h1>
         <div className="text-dark1">
           <Date dateString={postData.date} /> 
           {/* <IntroGrid postMetaData={{type: postData.type, tag: postData.tag}}/> */}

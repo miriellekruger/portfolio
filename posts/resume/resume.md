@@ -3,8 +3,6 @@ title: "Resume"
 date: "2023-05-19"
 ---
 
-Contact me @ miriellekruger13@gmail.com 
-
 #####  Languages:  
 Python, Javascript, SQL, HTML/CSS
 ##### Frameworks and Libraries:  
@@ -72,3 +70,5 @@ Aug. 2020 – Dec. 2020
 - [Pioneering the Approach to Understand a Trash-to-Gas Experiment in a Microgravity Environment](https://doi.org/10.2478/gsr-2021-0006)
 
 - [Reviewing Plasma Seed Treatments for Advancing Agriculture Applications on Earth and Into the Final Frontier](https://doi.org/10.2478/gsr-2021-0011)
+
+## [Contact Me!](/contact)

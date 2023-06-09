@@ -2,7 +2,7 @@ import Layout from '../../../components/layout'
 import { getAllPostIds, getPostData } from '../../../lib/posts'
 import Head from 'next/head'
 import Date from '../../../components/date'
-import Section from "../../../components/section"
+import Section from "../../../components/Section"
 
 export default function Post({ postData }) {
   return (
@@ -10,12 +10,15 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <Section>
+      <Section className=''>
+        <div className='mx-10 text-center justify-center'>
         <h1 className="flex text-3xl justify-center">{postData.title}</h1>
-        <div className="flex text-dark1 justify-center">
+        <span className="flex text-s justify-center text-dark1 -mt-4" >{postData.description}</span>
+        <div className="flex text-dark1_lighter justify-center">
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="text-justify" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </div>
       </Section>
     </Layout>
   )

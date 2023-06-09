@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
       <header className="">
         <NavBar name={name} />
       </header>
-      <main className='pt-20 m-2'>{children}</main>
+      <main className='pt-20'>{children}</main>
       {/* {!home && (
         <div className='pt-20'>
           <Link href="/">← Back to home</Link>
