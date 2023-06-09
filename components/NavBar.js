@@ -34,13 +34,13 @@ const Navbar = ({name}) => {
             alt={name}
           />
         </Link>
-        <a href="/" className='flex my-auto pl-2 font-fjallaOne text-2xl text-dark2 font-bold'>Mirielle Kruger</a>
+        <a href="/" className='my-auto pl-2 text-2xl text-dark2 font-bold hidden md:flex'>Mirielle Kruger</a>
       </div>
       
-      <div className='flex items-center'><Link className="mr-8" href="/resume">
+      <div className='flex'><Link className="mr-2 sm:mr-8" href="/resume">
         <NavBarIcon icon={<ImProfile size="28" />} text="Resume"/>
       </Link>
-      <Link className="mr-8" href="/blog">
+      <Link className="mr-2 sm:mr-8" href="/blog">
         <NavBarIcon icon={<BiCommentEdit size="28" />} text="Blog"/>
       </Link>
       <Link  className="mr-2" href="/contact">
@@ -59,7 +59,7 @@ const NavBarIcon = ({icon, text = "tooltip"}) => (
                   rounded-3xl hover:rounded-xl 
                   transition-all duration-300 ease-linear cursor-pointer group'>
     {icon}
-    <span className='font-fjallaOne absolute w-auto p-2 m-1 min-w-max top-14 rounded-md shadow-md text-background2 bg-dark2 text-sm font-bold transition-all duration-100 origin-top scale-0 group-hover:scale-100'>
+    <span className='font-sans absolute w-auto p-2 m-1 min-w-max top-14 rounded-md shadow-md text-background2 bg-dark2 text-sm font-bold transition-all duration-100 origin-top scale-0 group-hover:sm:scale-100'>
       {text}
     </span>
   </div>

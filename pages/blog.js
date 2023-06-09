@@ -17,13 +17,14 @@ export default function Blog({ allBlogData }) {
       <Section className="">
         <h2 className="flex text-3xl font-bold justify-center pb-3 text-dark1 ">BLOG</h2>
         <ul className="list-none">
-          {allBlogData.map(({ id, date, title }) => (
+          {allBlogData.map(({ id, date, title, description }) => (
             <li  key={id}>
-              <Link className="" href={`/posts/blog/${id}`}>{title}</Link>
+              <Link className="text-xl" href={`/posts/blog/${id}`}>{title}</Link>
               <br />
-              <small className="">
+              <small className="text-dark1">
                 <Date dateString={date} />
-              </small>
+              </small> 
+              <span className='text-s ml-3 text-dark1'>{description}</span>
             </li>
           ))}
         </ul>

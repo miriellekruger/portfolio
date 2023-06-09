@@ -14,9 +14,9 @@ export default function Home({ allBlogData,allExpData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <Section className="text-md">
+      <Section className="text-md mx-auto">
         
-        <h3>It's me. Hi. I'm Mirielle Kruger.  It's me! </h3>
+        <h3 className='flex text-3xl font-bold justify-center pb-3 text-dark1 '>it's me.  hi.  i'm mirielle kruger.   it's me! </h3>
         <p>
           <Emoji symbol="🚀" label="rocket-ship" />
           <Link href="/posts/blog/journey">
@@ -48,44 +48,42 @@ export default function Home({ allBlogData,allExpData }) {
             Fan Page for My Plants
           </Link>
         </p>
-        <p>
-          <Image
+        {/* <p>
+          <Image 
             priority
             src="/images/aqua-2-flowers.jpeg"
             height={500}
             width={500}
             alt="plant"
           />
-        </p>
+        </p> */}
 
       </Section>
-
-{/* 
-      <Section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allBlogData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/blog/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </Section> */}
-      <Section className="text-md p-1">
-        <h2 className='text-lg'>Experiences</h2>
-        <div>
-          {allExpData.map(({ id, date, title }) => (
-            <p key={id}>
-              <Link href={`/posts/experiences/${id}`}>{title}</Link>
+      
+      <Section className="text-md p-1 m-2">
+        <h2 className='text-2xl my-3 flex justify-center'>Experiences</h2>
+        <div className='md:flex gap-10 overflow-x-scroll bg-background2 w-screen rounded-xl shadow-lg md:scroll-p-5 md:snap-x md:snap-mandatory p-6'>
+          {allExpData.map(({ id, date, title, img }) => (
+            <div className='text-center shadow-lg p-5 rounded-xl bg-background1 flex-1 snap-start' key={id}>   
+                <Link href={`/posts/experiences/${id}`}>
+                {img ? 
+                <div className=' border-solid bg-background1 w-72 h-72 rounded-md mx-auto overflow-hidden items-center justify-center' >
+                <Image className=''
+                  priority
+                  src={img}
+                  height={300}
+                  width={300}
+                  alt={title}
+                /></div>
+                : <div className='bg-background1 w-72 h-72 rounded-md mx-auto'></div>
+                }
+                </Link>
+              <Link className='min-w-72' href={`/posts/experiences/${id}`}>{title}</Link>
               <br />
               <small className="text-dark1">
                 <Date dateString={date} />
               </small>
-            </p>
+            </div>
           ))}
         </div>
       </Section>

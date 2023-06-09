@@ -1,5 +1,5 @@
 ---
-title: "My Journey up to Now: a Series of Mini-Careers"
+title: "My Journey up to Now: A Series of Mini-Careers"
 date: '2023-06-06'
 ---
 

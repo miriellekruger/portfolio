@@ -1,6 +1,7 @@
 ---
 title: 'National Aeronautics and Space Administration (NASA)'
 date: '2020-08-01'
+img: "/images/OSCAR.jpeg"
 description: 'Various projects for OSCAR, a trash reforming reactor.'
 tag: 'space'
 author: 'Mirielle Kruger'

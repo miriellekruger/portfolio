@@ -4,6 +4,7 @@ date: '2023-05-01'
 description: 'Collecting data to and reporting data from a database via an interactive website. '
 tag: 'databases, API, Docker, HTML, CSS, JavaScript'
 type: "class group project"
+img: '/images/top25.jpeg' 
 ---
 
 #### Summary

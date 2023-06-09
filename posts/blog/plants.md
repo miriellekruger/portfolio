@@ -1,12 +1,12 @@
 ---
-title: 'Plants'
+title: 'Fan Page for My Plants'
 date: '2020-05-01'
-description: 'Iterative aquaponics projects.'
+description: 'Explaining why I have so many plants (relative to the average).'
 tag: 'plants'
 author: 'Mirielle Kruger'
 ---
 
-Great adoration or obsession? Who knows but ya girl likes plants! 
+Great adoration or obsession? I teeter between the two. 
 
 Ever since I was a kid, from climbing trees to eating dandelions in my yard, I have loved cultivating, consuming, and learning about plants. 
 

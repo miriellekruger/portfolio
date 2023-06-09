@@ -1,6 +1,7 @@
 ---
 title: 'Extreme Precipitation Data Analysis Project' 
 date: '2023-05-01'
+img: "/images/poster.jpeg"
 description: 'Data and Visual Analytics group project.'
 tag: 'python, plotly'
 author: 'Mirielle Kruger'
