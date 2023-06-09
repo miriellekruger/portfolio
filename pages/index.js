@@ -68,12 +68,12 @@ export default function Home({ allBlogData,allExpData }) {
       <Section >
         <div className="text-base p-1 mx-2">
         <h2 className='text-2xl my-3 flex justify-center'>Experiences</h2>
-        <div className='md:flex gap-10 overflow-auto bg-background2  rounded-xl shadow-lg md:scroll-p-5 md:snap-x md:snap-mandatory p-6'>
+        <div className='sm:flex gap-10 overflow-auto bg-background2  rounded-xl shadow-lg sm:scroll-p-5 sm:snap-x sm:snap-mandatory p-6'>
           {allExpData.map(({ id, date, title, img }) => (
-            <div className='text-center shadow-lg p-5 my-3 rounded-xl bg-background1 flex-1 snap-start' key={id}>   
+            <div className='text-center items-center shadow-lg p-5 my-3 rounded-xl bg-background1 flex flex-col sm:flex-1 sm:snap-start' key={id}>   
                 <Link href={`/posts/experiences/${id}`}>
                 {img ? 
-                <div className=' border-solid bg-background1 w-72 h-72 rounded-md mx-auto overflow-hidden items-center justify-center' >
+                <div className='bg-background1 sm:w-72 sm:h-72 rounded-md mx-auto overflow-hidden items-center justify-center' >
                   <Image className=''
                     priority
                     src={img}
@@ -82,7 +82,7 @@ export default function Home({ allBlogData,allExpData }) {
                     alt={title}
                   />
                 </div>
-                : <div className='bg-background1 w-72 h-72 rounded-md mx-auto'></div>
+                : <div className='bg-background1 sm:w-72 sm:h-72 rounded-md mx-auto'></div>
                 }
                 </Link>
               <Link className='min-w-72' href={`/posts/experiences/${id}`}>{title}</Link>
