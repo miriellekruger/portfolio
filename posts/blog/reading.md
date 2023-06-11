@@ -13,4 +13,4 @@ description: "What I have read and plan to read soon!"
 ## Currently Reading
 - [The Art of Gathering](https://www.goodreads.com/book/show/37424706-the-art-of-gathering?ref=nav_sb_ss_1_14) by Priya Parker
 - [Braiding Sweetgrass](https://www.goodreads.com/book/show/17465709-braiding-sweetgrass?ref=nav_sb_ss_1_9) by Robin Wall Kimmerer
-
+- [Women Who Run With the Wolves](https://www.goodreads.com/book/show/241823.Women_Who_Run_With_the_Wolves) by Clarissa Pinkola Estés

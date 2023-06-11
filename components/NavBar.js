@@ -24,6 +24,9 @@ const Navbar = ({name}) => {
                     flex
                     bg-background2 text-dark2 shadow-lg justify-between">
       <div className='flex my-auto'>
+
+
+      { name="home" ? <></> :
         <Link href="/">
           <Image
             priority
@@ -33,7 +36,7 @@ const Navbar = ({name}) => {
             width={60}
             alt={name}
           />
-        </Link>
+        </Link>}
         <a href="/" className='my-auto pl-2 text-2xl text-dark2 font-bold hidden md:flex'>Mirielle Kruger</a>
       </div>
       
@@ -55,7 +58,7 @@ export default Navbar;
 
 const NavBarIcon = ({icon, text = "tooltip"}) => (
   <div className='relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-dark2 text-background2
-                  hover:bg-background2 hover:text-dark2
+                  hover:sm:bg-background2 hover:sm:text-dark2
                   rounded-3xl hover:rounded-xl 
                   transition-all duration-300 ease-linear cursor-pointer group'>
     {icon}

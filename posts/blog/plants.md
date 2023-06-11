@@ -1,7 +1,7 @@
 ---
 title: 'Fan Page for My Plants'
 date: '2020-05-01'
-description: 'Explaining why I have so many plants (relative to the average).'
+description: 'Explaining why I have so many plants (relative to an average person).'
 tag: 'plants'
 author: 'Mirielle Kruger'
 ---

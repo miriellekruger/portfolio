@@ -14,6 +14,16 @@ export default function Home({ allBlogData,allExpData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <div className='flex justify-center'>
+          <Image
+            priority
+            src="/images/profile.jpg"
+            className="overflow-hidden  w-100 h-100 rounded-full"
+            height={300}
+            width={300}
+            alt={"profile"}
+          />
+        </div>
       <Section>
         <div className="mx-auto max-w-screen-md px-4">
         <h1 className='flex text-3xl font-bold justify-center text-center text-dark1 '>it's me.  hi.  i'm mirielle kruger.   it's me! </h1>
@@ -67,7 +77,7 @@ export default function Home({ allBlogData,allExpData }) {
       
       <Section >
         <div className="text-base p-1 mx-2">
-        <h2 className='text-2xl my-3 flex justify-center'>Experiences</h2>
+        <h2 className='text-2xl my-3 flex justify-center text-dark1'>Experiences</h2>
         <div className='sm:flex gap-10 overflow-auto bg-background2  rounded-xl shadow-lg sm:scroll-p-5 sm:snap-x sm:snap-mandatory p-6'>
           {allExpData.map(({ id, date, title, img }) => (
             <div className='text-center items-center shadow-lg p-5 my-3 rounded-xl bg-background1 flex flex-col sm:flex-1 sm:snap-start' key={id}>   

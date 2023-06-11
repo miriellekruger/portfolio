@@ -26,7 +26,8 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" /> */}
       </Head>
       <header className="">
-        <NavBar name={name} />
+        {home ? <NavBar name='home' /> : <NavBar name='side' /> }
+        
       </header>
       <main className=' pt-20'>{children}</main>
       {/* {!home && (
