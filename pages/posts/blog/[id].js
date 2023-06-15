@@ -1,10 +1,16 @@
 import Layout from '../../../components/layout'
 import { getAllPostIds, getPostData } from '../../../lib/posts'
 import Head from 'next/head'
+import Image from 'next/image'
 import Date from '../../../components/date'
 import Section from "../../../components/section"
+import { getImages } from '../../../lib/getImages'
+import GridGallery from '../../../components/GridGallery'
 
-export default function Post({ postData }) {
+
+export default function Post({ postData, imageData }) {
+  console.log(imageData)
+
   return (
     <Layout>
       <Head>
@@ -17,9 +23,15 @@ export default function Post({ postData }) {
         <div className="flex text-dark1_lighter justify-center">
           <Date dateString={postData.date} />
         </div>
-        <div className="text-justify" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="text-justify" dangerouslySetInnerHTML={{ __html: postData.contentHtml }}></div>
         </div>
       </Section>
+      {postData.id == "plants" ?
+          <div className="text-justify" >
+            <GridGallery imageData={imageData} />
+          </div>
+          : <></>
+        }
     </Layout>
   )
 }
@@ -37,9 +49,12 @@ export async function getStaticProps({ params }) {
   const folder = `blog`
   const id = params.id
   const postData = await getPostData({id, folder})
+  const folder2 = `public/images/plants` 
+  const imageData = await getImages({folder: folder2})
   return {
     props: {
-      postData
+      postData,
+      imageData
     }
   }
 }
