@@ -1,6 +1,6 @@
 ---
 title: "My Journey up to Now: A Series of Mini-Careers"
-date: '2023-06-06'
+date: '2023-09-01'
 description: "My transition from Chemical Engineering to Computer Science"
 ---
 
@@ -10,7 +10,7 @@ I began my college journey fueled by a deep curiosity about the world, initially
 
 Motivated to find an alternative route, I made a strategic pivot towards patent law and became a [patent agent](/posts/experiences/patents). This role placed me at the intersection of innovation and law, engaging with inventors and their groundbreaking creations. While this experience provided valuable insights and exposed me to diverse technologies, I yearned for a more active role in the process of creation and inventiveness.
 
-Accordingly, I am currently pursuing a Master's degree in Computer Science to further enhance my ability to create and develop impactful technology. Through relevant coursework, such as [Data and Visual Analytics](/posts/experiences/dva), Machine Learning, and [Database Design](/posts/experiences/databases), I am expanding my knowledge and honing my skills in critical areas of the field. In addition, I have gained practical experience by independently and collaboratively developing various tools and web applications using languages like Python, JavaScript, SQL, and HTML/CSS. This hands-on experience has deepened my understanding of software development and fortified my capacity to deliver innovative solutions.
+Accordingly, I am currently pursuing a Master's degree in Computer Science to further enhance my ability to create and develop impactful technology. Through relevant coursework, such as [Data and Visual Analytics](/posts/experiences/dva), [Deep Learning](/posts/experiences/deep-learning.md), [Simulation](/posts/experiences/yahtzee), and [Database Design](/posts/experiences/databases), I am expanding my knowledge and honing my skills in critical areas of the field. In addition, I have gained practical experience by independently and collaboratively developing various tools and web applications using languages like Python, JavaScript, SQL, and HTML/CSS. This hands-on experience has deepened my understanding of software development and fortified my capacity to deliver innovative solutions.
 
 Reflecting on the diverse range of my experiences, I have come to realize that the impact I can make and the collaborations I engage in hold greater significance to me than the specific field in which I work. This understanding stems from ventures like constructing a [greenhouse with aquaponics systems](/posts/blog/plants) during high school, which aimed to provide sustenance and employment opportunities to our community. This project not only allowed me to forge cherished memories with my father but also showcased my ability to bring something into existence that would have otherwise remained unrealized.
 

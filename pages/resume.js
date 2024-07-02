@@ -146,7 +146,7 @@ export default function Resume({ postData }) {
                 <h4 className='flex justify-center'></h4>
                 <div className=' justify-center text-justify '>
                   <ul>
-                    <li className='mx-5 my-1'>Spearheading the construction of a robust full-stack web interface incorporating dynamic form input and comprehensive database reports, utilizing Postgres, Docker, Node.js, SQL, and HTML/CSS to create a seamless user experience.</li>
+                    <li className='mx-5 my-1'>Spearheaded the construction of a robust full-stack web interface incorporating dynamic form input and comprehensive database reports, utilizing Postgres, Docker, Node.js, SQL, and HTML/CSS to create a seamless user experience.</li>
                   </ul>
                   </div>
               </div>

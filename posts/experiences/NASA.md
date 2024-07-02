@@ -27,6 +27,8 @@ The raw data from each experiment consisted of time series for multiple measurem
 #### Lessons Learned
 I learned the importance of engaging with the end-users and iteratively determining their requirements.  Often, I found myself delving too deep into the development of extraneous or imprecise features.
 
+During my second internship term at NASA, I mentored our new interns—women who initially questioned whether they belonged.  Having been in their shoes only a few months prior, I identified with their internal hardships.  As such, I created a space where they felt comfortable expressing their ideas with me and encouraged them to share their ideas with the greater team.  As they began to make their voices heard, I saw firsthand how my leadership improved the quality of the entire team’s work, fostered a culture of inclusion and collaboration, and as a result found solutions that were greater than our individual ideas. 
+
 #### Published Papers I Co-Authored at NASA
 - [A Comparison of Potential Trash-to-Gas Waste Processing Systems for Long-Term Crewed Spaceflight](https://ttu-ir.tdl.org/handle/2346/87234)
 

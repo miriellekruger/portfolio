@@ -4,6 +4,7 @@ date: '2022-05-01'
 description: 'Preparing and prosecuting patents as a patent agent. '
 tag: 'technical writing, persuasion, presentations'
 author: 'Mirielle Kruger'
+img: '/images/patent.png'
 ---
 
 # Working as a Patent Agent 
@@ -24,3 +25,7 @@ After reviewing hundreds of patents, I noticed an industry-wide pattern of prefe
 The patent applications to which I was assigned were within my control to change.  One significant change I made was altering the representation of a “default user” in my patent application drawings.  None of the libraries of templates for drawings available to me included a woman or non-white person, and the “user population” graphics showed only white male stick figures.  Therefore, I created my own library of simple stick-figure graphics representing users who were representative of the population the invention would serve, not just of the people who wrote the patent applications.
 
 #### [Fig. 1 Patents Website](https://fig1patents.com/)
+
+![Patent](/images/patent.png)
+
+Patent icon created by justicon - Flaticon

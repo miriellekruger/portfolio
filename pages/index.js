@@ -76,19 +76,19 @@ export default function Home({ allBlogData,allExpData }) {
       </Section>
       
       <Section >
-        <div className="text-base p-1 mx-2">
-        <h2 className='text-2xl my-3 flex justify-center text-dark1'>Experiences</h2>
-        <div className='sm:flex gap-10 overflow-auto bg-background2  rounded-xl shadow-lg sm:scroll-p-5 sm:snap-x sm:snap-mandatory p-6'>
+        <div className="text-base p-1 mx-2 mb-3">
+        <h2 className='text-2xl my-3 justify-center text-dark1'>Experiences</h2>
+        <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-5 overflow-auto bg-background2  rounded-xl shadow-lg sm:scroll-p-5 sm:snap-x sm:snap-mandatory p-6'>
           {allExpData.map(({ id, date, title, img }) => (
-            <div className='text-center items-center shadow-lg p-5 my-3 rounded-xl bg-background1 flex flex-col sm:flex-1 sm:snap-start' key={id}>   
+            <div className='text-center items-center shadow-lg p-5 rounded-xl bg-background1 sm:snap-start' key={id}>   
                 <Link href={`/posts/experiences/${id}`}>
                 {img ? 
-                <div className='bg-background1 sm:w-72 sm:h-72 rounded-md mx-auto overflow-hidden items-center justify-center' >
+                <div className='bg-background1 w-72 h-72 rounded-md mx-auto overflow-hidden items-center justify-center' >
                   <Image className=''
                     priority
                     src={img}
                     height={300}
-                    width={300}
+                    width={300}s
                     alt={title}
                   />
                 </div>
